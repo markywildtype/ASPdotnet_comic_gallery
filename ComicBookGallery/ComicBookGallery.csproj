@@ -15,9 +15,11 @@
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
     <Compile Remove="Views\ComicBooks\Index.cshtml.cs" />
+    <Compile Remove="Data\EmptyClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ComicBooks\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\ComicBooks\Index.cshtml" />
