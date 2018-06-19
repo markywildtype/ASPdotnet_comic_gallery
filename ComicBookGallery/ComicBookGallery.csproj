@@ -22,9 +22,7 @@
   <ItemGroup>
     <Folder Include="Views\ComicBooks\" />
     <Folder Include="Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Remove="Views\ComicBooks\Index.cshtml" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="ComicBookGalleryTest\obj\ComicBookGalleryTest.csproj.nuget.g.props" />
