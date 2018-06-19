@@ -16,6 +16,8 @@
     <Compile Remove="Controllers\HomeController.cs" />
     <Compile Remove="Views\ComicBooks\Index.cshtml.cs" />
     <Compile Remove="Data\EmptyClass.cs" />
+    <Compile Remove="Tests\EmptyClass.cs" />
+    <Compile Remove="Tests\ArtistTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ComicBooks\" />
@@ -23,5 +25,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\ComicBooks\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ComicBookGalleryTest\obj\ComicBookGalleryTest.csproj.nuget.g.props" />
+    <None Remove="ComicBookGalleryTest\obj\ComicBookGalleryTest.csproj.nuget.g.targets" />
+    <None Remove="ComicBookGalleryTest\obj\ComicBookGalleryTest.csproj.nuget.cache" />
+    <None Remove="ComicBookGalleryTests\obj\ComicBookGalleryTests.csproj.nuget.cache" />
+    <None Remove="Images\bone-50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\bone-50.jpg" />
   </ItemGroup>
 </Project>
