@@ -30,13 +30,27 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li><a asp-area="" asp-controller="ComicBooks" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="ComicBooks" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="ComicBooks" asp-action="Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        @*Back button that only displays when Detail views are rendered:*@
+        @if(ViewBag.ShowBackBar != null && ViewBag.ShowBackBar)
+        {
+          <div class="backbar">
+              <div class="container">
+                  @*@Html.ActionLink("Return to List", "Index", null, new { @class = "btn btn-default" })*@
+                  @Html.ActionLink("Return to List", "Index", "ComicBooks", null, new { @class = "btn btn-default" })
+              </div>
+          </div>
+
+        }
+
+
         <div class="container body-content">
             @RenderBody()
             <hr />
